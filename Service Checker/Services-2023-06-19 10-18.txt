@@ -1,0 +1,9 @@
+Service : WinDefend is currently Stopped, should be Running
+Setting WinDefend to Running
+Action was succesuful Service WinDefend is now Stopped should be Running
+Service : VSS is currently Stopped, should be Running
+Setting VSS to Running
+Action was succesuful Service VSS is now Stopped should be Running
+Service : Spooler is currently Running, should be Stopped
+Setting Spooler to Stopped
+Action was succesuful Service Spooler is now Running should be Stopped

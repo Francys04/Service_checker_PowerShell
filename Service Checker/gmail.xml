@@ -1,0 +1,37 @@
+<openServiceDescription xmlns="http://www.microsoft.com/schemas/openservicedescription/1.0">
+<homepageUrl>http://mail.google.com/mail/</homepageUrl>
+<display>
+<name>alexmorohai1997@gmail.com</name>
+<icon>http://ssl.gstatic.com/ui/v1/icons/mail/images/favicon.ico</icon>
+<description>Gmail</description>
+</display>
+<activity category="Email">
+<activityAction context="selection">
+<execute action="http://mail.google.com/mail">
+<parameter name="view" value="cm" type="text"/>
+<parameter name="fs" value="1" type="text"/>
+<parameter name="body" value="{documentUrl} : {selection}" type="text"/>
+<parameter name="su" value="{documentTitle}" type="text"/>
+<parameter name="sourceid" value="ie8-activity" type="text"/>
+</execute>
+</activityAction>
+<activityAction context="document">
+<execute action="http://mail.google.com/mail">
+<parameter name="view" value="cm" type="text"/>
+<parameter name="fs" value="1" type="text"/>
+<parameter name="body" value="{documentUrl}" type="text"/>
+<parameter name="su" value="{documentTitle}" type="text"/>
+<parameter name="sourceid" value="ie8-activity" type="text"/>
+</execute>
+</activityAction>
+<activityAction context="link">
+<execute action="http://mail.google.com/mail">
+<parameter name="view" value="cm" type="text"/>
+<parameter name="fs" value="1" type="text"/>
+<parameter name="su" value="{linkText?}" type="text"/>
+<parameter name="body" value="{link}" type="text"/>
+<parameter name="sourceid" value="ie8-activity" type="text"/>
+</execute>
+</activityAction>
+</activity>
+</openServiceDescription>
